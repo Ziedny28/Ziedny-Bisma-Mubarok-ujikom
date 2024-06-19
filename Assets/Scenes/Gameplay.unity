@@ -1852,7 +1852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timerTMPro: {fileID: 1550613844}
-  _time: 10
+  _time: 60
   _camAnimator: {fileID: 669710835}
   _boy: {fileID: 365934541}
   _enemySpawnerManager: {fileID: 1273590866}

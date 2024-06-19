@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System;
 
 public class TimerManager : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class TimerManager : MonoBehaviour
     [SerializeField] private GameObject _endGameUI;
     [SerializeField] private TextMeshProUGUI _scoreTextInEndGame;
     [SerializeField] private ScoreManager _scoreManager;
+    public static event Action OnEndGame;
     private Animator _boyAnimator;
     private bool isGameOver = false;
 
@@ -51,7 +53,7 @@ public class TimerManager : MonoBehaviour
         Debug.Log("EndGame");
         SetupBoyEndGame();
         _camAnimator.SetTrigger(_camGameOverAnimTriggerName);
-        _enemySpawnerManager.enabled = false;
+        Destroy(_enemySpawnerManager.gameObject);
         Invoke(nameof(TurnOnGameOverUI), 3);
     }
 

@@ -371,4 +371,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95bbcf33f91c25a4b91a2a501606aeaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyDestroyScore: 1
   _enemyHungerNeed: 200
+  _sliderPrefab: {fileID: 6281144776886658845, guid: 3f0428b9c08321e4398a1ad27d00b921, type: 3}

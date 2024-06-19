@@ -393,3 +393,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyDestroyScore: 2
   _enemyHungerNeed: 100
+  _sliderPrefab: {fileID: 6281144776886658845, guid: 3f0428b9c08321e4398a1ad27d00b921, type: 3}
