@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] private float _enemySpeed = 100;
-    [SerializeField] private float _enemySpeedMultiplier = 0.0003f;
+    [SerializeField] private float _enemySpeedMultiplier = 0.0001f;
     private CharacterController _enemyController;
     private void Awake()
     {

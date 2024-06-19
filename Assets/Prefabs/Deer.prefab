@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemySpeed: 250
-  _enemySpeedMultiplier: 0.0003
+  _enemySpeedMultiplier: 0.0001
 --- !u!95 &2356761538130065427
 Animator:
   serializedVersion: 5

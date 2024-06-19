@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemySpeed: 300
-  _enemySpeedMultiplier: 0.0003
+  _enemySpeedMultiplier: 0.0001
 --- !u!143 &5535156716803004908
 CharacterController:
   m_ObjectHideFlags: 0
@@ -371,4 +371,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95bbcf33f91c25a4b91a2a501606aeaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyDestroyScore: 5
   _enemyHungerNeed: 200
