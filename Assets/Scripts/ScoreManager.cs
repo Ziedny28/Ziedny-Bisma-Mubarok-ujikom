@@ -8,6 +8,11 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _scoreTMPro;
     private float _currentScore = 0;
 
+    public float CurrentScore
+    {
+        get => _currentScore;
+    }
+
     private void OnEnable()
     {
         EnemyHungerNeed.OnEnemyDestroyed += UpdateScore;
