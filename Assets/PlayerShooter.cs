@@ -13,7 +13,6 @@ public class PlayerShooter : MonoBehaviour
     private void Awake()
     {
         _playerAnimator = GetComponent<Animator>();
-
     }
 
     // Update is called once per frame

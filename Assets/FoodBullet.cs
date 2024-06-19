@@ -7,6 +7,7 @@ public class FoodBullet : MonoBehaviour
 
     [SerializeField] private float _rigidbodyForce = 300;
     [SerializeField] private float _bulletLifeTime = 3f;
+    [SerializeField] private string _enemyTag = "Enemy";
     private void Awake()
     {
         Rigidbody rb = GetComponent<Rigidbody>();
@@ -18,5 +19,13 @@ public class FoodBullet : MonoBehaviour
     private void DestroyBullet()
     {
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag(_enemyTag))
+        {
+            DestroyBullet();
+        }
     }
 }
