@@ -8,6 +8,7 @@ public class FoodBullet : MonoBehaviour
     [SerializeField] private float _rigidbodyForce = 300;
     [SerializeField] private float _bulletLifeTime = 3f;
     [SerializeField] private string _enemyTag = "Enemy";
+    [SerializeField] private float _hungerValue = 25;
     private void Awake()
     {
         Rigidbody rb = GetComponent<Rigidbody>();
@@ -25,6 +26,8 @@ public class FoodBullet : MonoBehaviour
     {
         if (other.gameObject.CompareTag(_enemyTag))
         {
+            EnemyHungerNeed enemyHungerNeed = other.GetComponent<EnemyHungerNeed>();
+            enemyHungerNeed.TakeFood(_hungerValue);
             DestroyBullet();
         }
     }

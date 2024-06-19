@@ -309,6 +309,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bd1ca8c7f0eab9e438e483d83cd6c731, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7994032429861953757}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bd1ca8c7f0eab9e438e483d83cd6c731, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7004771326364417232}
   m_SourcePrefab: {fileID: 100100000, guid: bd1ca8c7f0eab9e438e483d83cd6c731, type: 3}
 --- !u!1 &1307310665376400602 stripped
 GameObject:
@@ -353,7 +356,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12c7fe4eaa7a3834995487dbc6671fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemySpeed: 0.1
+  _enemySpeed: 300
+  _enemySpeedMultiplier: 0.0003
 --- !u!95 &7994032429861953757
 Animator:
   serializedVersion: 5
@@ -375,3 +379,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7004771326364417232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307310665376400602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95bbcf33f91c25a4b91a2a501606aeaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyHungerNeed: 100
