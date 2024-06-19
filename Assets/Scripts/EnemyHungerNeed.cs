@@ -10,11 +10,13 @@ public class EnemyHungerNeed : MonoBehaviour
     [SerializeField] private float _enemyDestroyScore = 1;
     [SerializeField] private float _enemyHungerNeed = 100;
     [SerializeField] private GameObject _sliderPrefab;
+    [SerializeField] private GameObject _vfxDestroyPrefab;
     private Slider _healthSlider;
     private float _currentHunger = 0;
     private Camera cam;
     private GameObject sliderObject;
     float sliderContent = 0;
+
 
     private void OnEnable()
     {
@@ -50,6 +52,7 @@ public class EnemyHungerNeed : MonoBehaviour
             OnEnemyDestroyed?.Invoke(_enemyDestroyScore);
             Destroy(sliderObject);
             Destroy(gameObject);
+
         }
     }
 
